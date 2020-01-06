@@ -1,0 +1,10 @@
+[alias]
+  amend = !git add -A && git commit --amend --no-edit
+  c = "!git add -A && git commit -m "
+  s = status -sb
+  n = checkout -t origin/master -b 
+  p = !git push origin $(git rev-parse --abbrev-ref HEAD)
+  nevermind = !git reset --hard HEAD && git clean -d -f
+  co = !git checkout
+
+

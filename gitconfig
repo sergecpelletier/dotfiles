@@ -1,0 +1,28 @@
+[user]
+	email = serge.chevariepelletier@kirasystems.com
+	name = Serge Chevarie-Pelletier
+[core]
+	pager = less -R -x1,5
+	editor = nvim
+	excludesfile = /Users/sergechevariepelletier/.config/git/ignore
+[color]
+	ui = auto
+[log]
+	decorate = short
+[rebase]
+	autosquash = true
+[credential]
+	helper = cache
+[diff]
+	indentHeuristic = true
+[fetch]
+	prune = true
+[pull]
+#	rebase = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[include]
+	path = /Users/sergechevariepelletier/dotfiles/gitalias.txt
