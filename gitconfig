@@ -1,10 +1,11 @@
 [user]
 	email = serge.chevariepelletier@kirasystems.com
 	name = Serge Chevarie-Pelletier
+	signingkey = CC03FD01927D5D86
 [core]
 	pager = less -R -x1,5
 	editor = nvim
-	excludesfile = /Users/sergechevariepelletier/.config/git/ignore
+	excludesfile = /Users/scp/.config/git/ignore
 [color]
 	ui = auto
 [log]
@@ -19,10 +20,16 @@
 	prune = true
 [pull]
 #	rebase = true
+[include]
+	path = /Users/scp/dotfiles/gitalias.txt
+[commit]
+	gpgsign = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
-[include]
-	path = /Users/sergechevariepelletier/dotfiles/gitalias.txt
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+[url "git@github.com:kirasystems/"]
+	insteadOf = https://github.com/kirasystems/
