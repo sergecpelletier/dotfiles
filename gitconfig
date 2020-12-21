@@ -33,3 +33,9 @@
 	process = git-lfs filter-process --skip
 [url "git@github.com:kirasystems/"]
 	insteadOf = https://github.com/kirasystems/
+[url "git@github.com:kirasystems-alt/"]
+	insteadOf = https://github.com/kirasystems-alt/
+[url "git@github.com:kirasystems/backend"]
+	insteadOf = https://github.com/kirasystems/backend
+[url "git@github.com:kirasystems-alt/aitk"]
+	insteadOf = https://github.com/kirasystems-alt/aitk
