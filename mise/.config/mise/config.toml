@@ -1,0 +1,8 @@
+[tools]
+fd = "latest"
+fzf = "latest"
+go = "1.24"
+lazygit = "latest"
+neovim = "latest"
+node = "20"
+ripgrep = "latest"
